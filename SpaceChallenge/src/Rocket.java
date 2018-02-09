@@ -1,7 +1,17 @@
 public class Rocket extends SpaceShip {
-    // Methods
 
+    public Rocket(int totalWeight) {
+        super(totalWeight);
+    }
+
+    // Methods
     // Override launch (always true)
+    public boolean launch() {
+        return true;
+    }
 
     // Override land (always true)
+    public boolean land() {
+        return true;
+    }
 }

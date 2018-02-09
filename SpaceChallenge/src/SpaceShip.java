@@ -4,18 +4,33 @@ public class SpaceShip {
     // Fields:
     int totalWeight;
     int currentWeight;
-    ArrayList bag;
+    ArrayList<Item> bag;
 
     // Constructor
     public SpaceShip(int totalWeight) {
         this.totalWeight = totalWeight;
         this.currentWeight = 0;
-        ArrayList bag = new ArrayList();
+
+        bag = new ArrayList<Item>();
     }
+
+/*    // Advice from Intelij???
+    public SpaceShip() {
+        bag = new ArrayList<Item>();
+    }*/
 
     // Methods:
-    public launch() {
-        if ( true ) {
+    public Boolean launch(Boolean true_or_false) {
+        return true_or_false;
+    }
+
+    public Boolean land(Boolean true_or_false) {
+        return true_or_false;
+    }
+
+    // Can this made private? Looks like just a helper function..
+    public Boolean canCarry( Item item ) {
+        if (item.getWeight() + currentWeight < totalWeight) {
             return true;
         }
         else {
@@ -23,30 +38,18 @@ public class SpaceShip {
         }
     }
 
-    public land() {
-        // Result landing
-        if ( true ) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
-/*
-    public canCarry(Item item) {
-        if (item.getWeight + currentWeight < totalWeight) {
-            return true;
-        }
-        else {
-            return false;
+    public void carry(Item item) {
+        if (this.canCarry( item )) {
+            bag.add(item);
+            // update weight
+            this.currentWeight =+ item.getWeight();
+        } else {
+            System.out.println("Can't carry item: " + item.getName());
         }
     }
 
-    public carry(Item item) {
-        bag.add(item);
-        this.currentWeight =+ item.getWeight;
+    public ArrayList<Item> getBag() {
+        System.out.println("Elements are: " + bag );
+        return bag;
     }
-*/
-
 }

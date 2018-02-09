@@ -1,10 +1,10 @@
-public class U1 extends Rocket {
+public class U2 extends Rocket {
     // Fields
     private int cost;
     private int rocketWeight;
     private int totalWeight;
 
-    public U1(int totalWeight) {
+    public U2(int totalWeight) {
         super(totalWeight);
     }
 
@@ -12,13 +12,12 @@ public class U1 extends Rocket {
     //methods override from Rocket
     public boolean launch() {
         // calculate change
-        // 0,05 * (currentWeight / totalWeight)
+        // 0,04 * (currentWeight / totalWeight)
         return true;
     }
 
     public boolean land() {
-        // 0,01 * (currentWeight / totalWeight)
+        // 0,08 * (currentWeight / totalWeight)
         return true;
     }
-
 }
