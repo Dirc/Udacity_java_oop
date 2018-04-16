@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class SpaceShip {
     // Fields:
-    int totalWeight;
-    int currentWeight;
-    ArrayList<Item> bag;
+    public int totalWeight;
+    public int currentWeight;
+    public ArrayList<Item> bag;
 
     // Constructor
     public SpaceShip(int totalWeight) {
@@ -13,11 +13,6 @@ public class SpaceShip {
 
         bag = new ArrayList<Item>();
     }
-
-/*    // Advice from Intelij???
-    public SpaceShip() {
-        bag = new ArrayList<Item>();
-    }*/
 
     // Methods:
     public Boolean launch(Boolean true_or_false) {
@@ -42,14 +37,13 @@ public class SpaceShip {
         if (this.canCarry( item )) {
             bag.add(item);
             // update weight
-            this.currentWeight =+ item.getWeight();
+            this.currentWeight += item.getWeight();
         } else {
             System.out.println("Can't carry item: " + item.getName());
         }
     }
 
     public ArrayList<Item> getBag() {
-        System.out.println("Elements are: " + bag );
         return bag;
     }
 }
