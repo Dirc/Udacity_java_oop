@@ -4,8 +4,10 @@ public class U2 extends Rocket {
     private int rocketWeight;
     private int totalWeight;
 
-    public U2(int totalWeight) {
-        super(totalWeight);
+    public U2() {
+        super(29000);
+        this.rocketWeight = 18000;
+        this.cost         = 100;
     }
 
 

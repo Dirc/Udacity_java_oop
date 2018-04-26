@@ -8,7 +8,7 @@ public class SpaceShip {
 
     // Constructor
     public SpaceShip(int totalWeight) {
-        this.totalWeight = totalWeight;
+        this.totalWeight   = totalWeight;
         this.currentWeight = 0;
 
         bag = new ArrayList<Item>();

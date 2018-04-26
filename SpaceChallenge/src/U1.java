@@ -4,14 +4,12 @@ public class U1 extends Rocket {
     // Fields
     private int cost;
     private int rocketWeight;
-    private int totalWeight;
 
-    public U1(int totalWeight) {
-        super(totalWeight);
-        //super.totalWeight = 18000;
-        //this.totalWeight = 18000;
-        //this.cost = 100;
+    // Constructor
+    public U1() {
+        super(18000);
         this.rocketWeight = 10000;
+        this.cost         = 120;
     }
 
     // Generate random double
@@ -22,16 +20,18 @@ public class U1 extends Rocket {
 
     // calculate chance
     private Double failureChance() {
-        double chance = 0.05 * (this.currentWeight / this.totalWeight);
+        double chance = 0.05 * (this.currentWeight / super.totalWeight);
         return chance;
     }
 
     //methods override from Rocket
     public boolean launch(Double random) {
+/*
         if (random) {}
         else {
             random = this.random();
         }
+*/
         if (random <= this.failureChance()) {
             return false;
         } else {

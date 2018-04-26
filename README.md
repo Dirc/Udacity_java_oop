@@ -21,3 +21,12 @@ https://www.jetbrains.com/help/idea/configuring-testing-libraries.html
 https://stackoverflow.com/questions/29749334/intellij-java-package-org-junit-does-not-exist
 https://www.jetbrains.com/help/idea/tutorial-test-driven-development.html
 
+
+# ToDo
+- [x] Inheritance: how to handle fixed parameter/field value
+- [ ] U1, U2 launch method
+- [ ] U1, U2 land method
+- [ ] Create testcase to test ArrayList, i.e. test Simulation.loadItems(File).
+
+
+__
