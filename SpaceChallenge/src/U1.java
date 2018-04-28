@@ -17,12 +17,12 @@ public class U1 extends Rocket {
     }
 
     // Generate random double
-    private Double random() {
+    public Double random() {
         Random random = new Random();
         return random.nextDouble();
     }
 
-    private boolean determinedLaunch(Double random) {
+    public boolean determinedLaunch(Double random) {
         if (random <= this.chanceOfLaunchExplosion) {
             return false;
         } else {
@@ -40,10 +40,10 @@ public class U1 extends Rocket {
 
     //methods override from Rocket
     public boolean launch() {
-        this.determinedLaunch(this.random());
+        return this.determinedLaunch(this.random());
     }
 
     public boolean land() {
-        this.determinedLaunch(this.random());
+        return this.determinedLaunch(this.random());
     }
 }

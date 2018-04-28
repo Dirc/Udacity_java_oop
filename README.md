@@ -24,8 +24,8 @@ https://www.jetbrains.com/help/idea/tutorial-test-driven-development.html
 
 # ToDo
 - [x] Inheritance: how to handle fixed parameter/field value
-- [ ] U1, U2 launch unit test
-- [ ] U1, U2 land unit test
+- [ ] U1, U2 launch method, unit test, `@override`?
+- [ ] U1, U2 land method, unit test, `@override`?
 - [ ] Create testcase to test ArrayList, i.e. test Simulation.loadItems(File).
 
 
