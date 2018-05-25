@@ -1,7 +1,7 @@
 public class Rocket extends SpaceShip {
 
-    public Rocket(int totalWeight) {
-        super(totalWeight);
+    public Rocket(int maxWeight) {
+        super(maxWeight);
     }
 
     // Methods

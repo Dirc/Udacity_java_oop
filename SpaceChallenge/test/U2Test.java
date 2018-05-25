@@ -2,21 +2,21 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class U1Test {
-    U1 u1;
+public class U2Test {
+    U2 u2;
 
     @org.junit.Before
     public void setUp() throws Exception {
-        this.u1 = new U1();
+        this.u2 = new U2();
     }
 
     @org.junit.After
     public void tearDown() throws Exception {
     }
 
-    @org.junit.Test
-    public void u1() {
-        assertEquals(18000, this.u1.maxWeight);
+    @Test
+    public void u2() {
+        assertEquals(29000, this.u2.maxWeight);
     }
 
 
@@ -31,7 +31,7 @@ public class U1Test {
         double expectedAverage;
         double random;
         for (int i = 0; i < numberOfTests; i++) {
-            random = u1.random();
+            random = u2.random();
             total = total + random;
             min = Math.min(min, random);
             max = Math.max(max, random);
@@ -51,18 +51,18 @@ public class U1Test {
 
     @Test
     public void launch() {
-        Double a = 0.0, b = 0.05, c = 0.99;
-        assertFalse("Should be false", this.u1.determinedLaunch(a));
-        assertTrue("Should be true", this.u1.determinedLaunch(b));
-        assertTrue("Should be true", this.u1.determinedLaunch(c));
+        Double a = 0.0, b = 0.04, c = 0.99;
+        assertFalse("Should be false", this.u2.determinedLaunch(a));
+        assertTrue("Should be true", this.u2.determinedLaunch(b));
+        assertTrue("Should be true", this.u2.determinedLaunch(c));
     }
 
     @Test
     public void land() {
-        Double a = 0.0, b = 0.01, c = 0.99;
-        assertFalse("Should be false", this.u1.determinedLand(a));
-        assertTrue("Should be true", this.u1.determinedLand(b));
-        assertTrue("Should be true", this.u1.determinedLand(c));
+        Double a = 0.0, b = 0.08, c = 0.99;
+        assertFalse("Should be false", this.u2.determinedLand(a));
+        assertTrue("Should be true", this.u2.determinedLand(b));
+        assertTrue("Should be true", this.u2.determinedLand(c));
     }
 
 }
