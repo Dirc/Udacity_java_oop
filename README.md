@@ -4,8 +4,8 @@ Course name: Object Oriented Programming in Java
 
 https://eu.udacity.com/course/object-oriented-programming-in-java--ud283
 
-# Unit test
-Setup unit tests for your project:
+# Unit test in Intelij
+Setup unit tests for your Intelij project:
 
 ### Create test directory
 - Create directory
@@ -25,8 +25,8 @@ https://www.jetbrains.com/help/idea/tutorial-test-driven-development.html
 # ToDo
 - [x] Inheritance: how to handle fixed parameter/field value
 - [x] U1, U2 launch method, unit test, `@override`?
-- [ ] U1, U2 land method, unit test, `@override`?
-- [ ] Create testcase to test ArrayList, i.e. test Simulation.loadItems(File).
-
-
+- [x] U1, U2 land method, unit test, `@override`?
+- [ ] Improve testcase to test ArrayList, i.e. test Simulation.loadItems(File).
+- [ ] Create unit test + method loadU1, loadU2.
+- [ ] Create unit test + method ruSimulation.
 __
